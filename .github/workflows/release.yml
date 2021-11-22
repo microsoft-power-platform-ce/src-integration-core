@@ -17,7 +17,7 @@ jobs:
         uses: microsoft/powerplatform-actions/pack-solution@v0
         with:
           managed: true
-          solution-file: Publisher.zip
+          solution-file: solution.zip
           solution-folder: solution
       - name: Create release
         uses: softprops/action-gh-release@v1
