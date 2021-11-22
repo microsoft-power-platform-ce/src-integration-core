@@ -1,0 +1,14 @@
+{
+  "name": "@microsoft-power-platform-ce/src-integration-core",
+  "version": "0.0.0",
+  "description": "Core solution for integrating development environments with source control systems",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microsoft-power-platform-ce/src-integration-core.git"
+  },
+  "author": "Melody Universe",
+  "license": "ISC",
+  "files": [
+    "solution.zip"
+  ]
+}
