@@ -1,6 +1,6 @@
 {
   "name": "@microsoft-power-platform-ce/src-integration-core",
-  "version": "0.0.0",
+  "version": "0.0.0-rc.1",
   "description": "Core solution for integrating development environments with source control systems",
   "repository": {
     "type": "git",
