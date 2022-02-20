@@ -16,7 +16,7 @@ jobs:
       - name: Pack solution
         uses: microsoft/powerplatform-actions/pack-solution@v0
         with:
-          managed: true
+          solution-type: Managed
           solution-file: solution.zip
           solution-folder: solution
       - name: Create release
