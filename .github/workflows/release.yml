@@ -1,8 +1,7 @@
 on:
   push:
-#    tags:
-#      - "*"
-  workflow_dispatch:
+    tags:
+      - "*"
 name: Create Release
 jobs:
   create-release:
@@ -13,9 +12,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Pack solution
+      - id: pack-solution
+        name: Pack solution
         uses: microsoft-power-platform-ce/actions/pack-solution@main
-#      - name: Create release
-#        uses: softprops/action-gh-release@v1
-#        with:
-#          files: mppce_src_integration_core.zip
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ${{ steps.pack-solution.outputs.solution-file }}
