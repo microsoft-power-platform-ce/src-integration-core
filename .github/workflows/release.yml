@@ -2,7 +2,7 @@ on:
   push:
 #    tags:
 #      - "*"
-  workflow-dispatch:
+  workflow_dispatch:
 name: Create Release
 jobs:
   create-release:
