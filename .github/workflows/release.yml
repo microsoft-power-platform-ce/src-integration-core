@@ -1,11 +1,11 @@
 on:
   push:
-    tags:
-      - "*"
-name: Create Release / Publish Package
+#    tags:
+#      - "*"
+name: Create Release
 jobs:
-  ci-cd:
-    name: Pack solution, create release, and publish package
+  create-release:
+    name: Pack solution and create release
     permissions:
       contents: write
       packages: write
@@ -14,19 +14,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Pack solution
-        uses: microsoft/powerplatform-actions/pack-solution@v0
+        uses: microsoft-power-platform-ce/actions/pack-solution@latest
         with:
           managed: true
-          solution-file: solution.zip
+          solution-file: mppce_src_integration_core.zip
           solution-folder: solution
-      - name: Create release
-        uses: softprops/action-gh-release@v1
-      - name: Setup node
-        uses: actions/setup-node@v2
-        with:
-          node-version: "16.x"
-          registry-url: https://npm.pkg.github.com
-      - name: Publish package
-        run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#      - name: Create release
+#        uses: softprops/action-gh-release@v1
+#        with:
+#          files: mppce_src_integration_core.zip
