@@ -15,10 +15,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Pack solution
         uses: microsoft-power-platform-ce/actions/pack-solution@latest
-        with:
-          managed: true
-          solution-file: mppce_src_integration_core.zip
-          solution-folder: solution
 #      - name: Create release
 #        uses: softprops/action-gh-release@v1
 #        with:
