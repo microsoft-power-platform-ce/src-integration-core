@@ -1,0 +1,13 @@
+<environmentvariabledefinition schemaname="mppce_branch">
+  <description default="Name of the branch to commit solution changes to.">
+    <label description="Name of the branch to commit solution changes to." languagecode="1033" />
+  </description>
+  <displayname default="Branch">
+    <label description="Branch" languagecode="1033" />
+  </displayname>
+  <introducedversion>0.0.0.1</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <secretstore>0</secretstore>
+  <type>100000000</type>
+</environmentvariabledefinition>

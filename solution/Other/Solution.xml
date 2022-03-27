@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.21103.140" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.22023.147" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>mppce_src_integration_core</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Source Integration (Core)" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>0.0.0.1</Version>
+    <Version>0.0.1.0</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>microsoft_power_platform_customer_engineers</UniqueName>

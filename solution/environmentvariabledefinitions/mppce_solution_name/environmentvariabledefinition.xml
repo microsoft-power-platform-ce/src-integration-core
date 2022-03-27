@@ -1,0 +1,13 @@
+<environmentvariabledefinition schemaname="mppce_solution_name">
+  <description default="Name of the solution being actively developed in the current environment.">
+    <label description="Name of the solution being actively developed in the current environment." languagecode="1033" />
+  </description>
+  <displayname default="Solution Name">
+    <label description="Solution Name" languagecode="1033" />
+  </displayname>
+  <introducedversion>0.0.0.1</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <secretstore>0</secretstore>
+  <type>100000000</type>
+</environmentvariabledefinition>
